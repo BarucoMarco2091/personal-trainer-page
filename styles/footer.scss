@@ -1,0 +1,95 @@
+@import '../styles/variables.scss';
+@import '../styles/responsivity.scss';
+
+footer {
+    background-color: $accent;
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 1dvh;
+
+        .footer-info {
+
+            .logo {
+                width: 12dvh;
+                height: 12dvh;
+                object-fit: contain;
+                border-radius: 50%;
+            }
+
+            .social-media {
+                color: $popover;
+                margin: 2dvh;
+            }
+
+            .redes {
+
+                button {
+                    margin-right: 2dvh;
+                    background-color: $secondary;
+                    border: none;
+                    border-radius: 1dvh;
+                    width: 7dvh;
+                    height: 7dvh;
+                    transition: background-color .9s;
+
+                    .face,
+                    .insta,
+                    .youtube {
+                        width: 4dvh;
+                        height: 4dvh;
+                    }
+                }
+
+                button:hover {
+                    background-color: $ring;
+                }
+            }
+        }
+
+        .contato {
+
+            p {
+                color: $muted;
+                font-weight: 600;
+                font-size: 1.3rem;
+            }
+
+            .whatsapp,
+            .email,
+            .location {
+                display: flex;
+                margin-top: 2dvh;
+
+                img {
+                    width: 5dvh;
+                    height: 5dvh;
+                    margin-right: 2dvh;
+                }
+            }
+        }
+
+        .horarios {
+
+            p {
+                color: $muted;
+                font-weight: 600;
+                font-size: 1.3rem;
+            }
+
+            .clock {
+                display: flex;
+                margin-top: 2dvh;
+
+                img {
+                    width: 5dvh;
+                    height: 5dvh;
+                    margin-right: 2dvh;
+                }
+            }
+        }
+    }
+}

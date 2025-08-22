@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex !important;
+    padding: 1dvh 1dvh !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  #mobile_btn {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .nav-list {
+    display: none !important;
+  }
+}
+@media (width >= 1024px) {
+  .hero .hero-info {
+    display: flex;
+    flex-direction: row !important;
+  }
+  .hero .hero-button {
+    display: block !important;
+  }
+  .hero .hero-button .tratamento-btn {
+    background: linear-gradient(135deg, hsl(142, 71%, 45%), hsl(25, 95%, 53%));
+    color: hsl(220, 13%, 95%);
+    width: 40dvh;
+    height: 8dvh;
+    border: none;
+    border-radius: 1dvh;
+    transition: transform 0.9s;
+    margin-right: 2dvh;
+  }
+  .hero .hero-button .tratamento-btn:hover {
+    transform: scale(1.1);
+  }
+  .hero .hero-button .consulta-button {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(142, 71%, 45%);
+    font-weight: 600;
+    height: 8dvh;
+    width: 30dvh;
+    border: 1px solid hsl(142, 71%, 45%);
+    border-radius: 1dvh;
+    transition: background-color 0.9s, color 0.9s;
+  }
+  .hero .hero-button .consulta-button:hover {
+    background-color: hsl(142, 71%, 45%);
+    color: hsl(220, 13%, 95%);
+  }
+}
+@media (width >= 1024px) {
+  .about {
+    display: flex;
+    flex-direction: row !important;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 5dvh;
+  }
+  .about .about-img,
+  .about .about-text {
+    flex: 1;
+  }
+  .about .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2dvh;
+  }
+}
+@media (width >= 1024px) {
+  .treinamento {
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    margin: auto;
+    padding-top: 5dvh;
+  }
+  .treinamento .treinamento-descricao {
+    margin-bottom: 4dvh;
+    margin-top: 4dvh;
+  }
+  .treinamento .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 5dvh !important;
+  }
+}
+@media (width >= 1024px) {
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    margin: auto;
+    padding-top: 5dvh;
+  }
+  .testimonials .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 2dvh !important;
+    margin-top: 5dvh;
+    margin-bottom: 5dvh;
+  }
+}
+@media (width >= 1024px) {
+  .info {
+    margin-bottom: 5dvh;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+    width: 95%;
+    height: 13dvh;
+    background: linear-gradient(135deg, hsl(142, 71%, 45%), hsl(25, 95%, 53%));
+    padding: 2dvh;
+    border-radius: 2dvh;
+  }
+  .info .white {
+    color: hsl(220, 13%, 95%);
+    font-size: 2rem;
+  }
+  .info .gray {
+    color: hsl(220, 9%, 46%);
+    font-size: 1.3rem;
+    font-family: "Poppins", serif;
+    margin-top: 2dvh;
+  }
+}
+@media (width >= 1024px) {
+  footer .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+    padding-top: 5dvh;
+  }
+}
+main {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1dvh 1dvh;
+}
+main .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+main .about .about-text {
+  margin-left: 2dvh;
+  margin-bottom: 2dvh;
+}
+main .about .about-text h2 {
+  color: hsl(217, 91%, 20%);
+}
+main .about .about-text span {
+  color: hsl(142, 71%, 45%);
+}
+main .about .about-text p {
+  color: hsl(220, 9%, 46%);
+  line-height: 2rem;
+}
+main .about .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 3dvh;
+}
+main .about .grid .card {
+  display: flex;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+  height: 10dvh;
+  border-radius: 1dvh 1dvh 1dvh 1dvh;
+  margin-top: 1.5dvh;
+}
+main .about .grid .card .card-img {
+  height: 70%;
+  margin-top: 1dvh;
+  margin-left: 1dvh;
+}
+main .about .grid .card .card-img img {
+  width: 5dvh;
+  height: 5dvh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  color: hsl(0, 0%, 100%);
+}
+main .about .grid .card .card-info {
+  margin-left: 2dvh;
+}
+main .about .grid .card .card-info .card-clientes p,
+main .about .grid .card .card-info .card-award p {
+  color: hsl(220, 13%, 18%);
+  font-weight: 600;
+}
+main .about .grid .card .card-info .card-clientes span,
+main .about .grid .card .card-info .card-award span {
+  color: hsl(220, 9%, 46%);
+  font-family: "Poppins", serif;
+}
+main .about .objectives {
+  background: linear-gradient(135deg, hsl(142, 71%, 45%), hsl(25, 95%, 53%));
+  margin-top: 7dvh;
+  border-radius: 2dvh;
+}
+main .about .objectives p {
+  color: hsl(0, 0%, 100%);
+  padding: 2dvh 2dvh;
+}
+main .about .objectives span {
+  font-family: "Poppins", serif;
+  color: hsl(220, 13%, 95%);
+  margin-left: 2dvh;
+}
+main .treinamento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+main .treinamento h2 {
+  color: hsl(217, 91%, 20%);
+  font-weight: 600;
+}
+main .treinamento span {
+  color: hsl(142, 71%, 45%);
+  font-weight: 600;
+}
+main .treinamento p {
+  color: hsl(220, 9%, 46%);
+  line-height: 2rem;
+}
+main .treinamento .grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main .treinamento .grid-container .card {
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+  border-radius: 2dvh;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+  transition: transform 0.9s;
+  margin-top: 1dvh;
+}
+main .treinamento .grid-container .card .card-image img {
+  filter: brightness(50%);
+  margin-bottom: 3dvh;
+  transition: transform 0.9s;
+}
+main .treinamento .grid-container .card .card-image img:hover {
+  transform: scale(1.1);
+}
+main .treinamento .grid-container .card .card-body {
+  margin-top: 1dvh;
+}
+main .treinamento .grid-container .card .card-body .card-title {
+  color: hsl(217, 91%, 20%);
+  font-family: "Poppins", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition: color 0.9s;
+}
+main .treinamento .grid-container .card .card-body .card-title:hover {
+  color: hsl(142, 71%, 45%);
+}
+main .treinamento .grid-container .card .card-body .card-description {
+  line-height: normal;
+}
+main .treinamento .grid-container .card .card-body .card-clock {
+  display: flex;
+  justify-content: start;
+  margin-left: 2dvh;
+  margin-top: 1dvh;
+}
+main .treinamento .grid-container .card .card-body .card-clock img {
+  width: 5dvh;
+  height: 5dvh;
+  margin-right: 1dvh;
+}
+main .treinamento .grid-container .card .card-body .card-people {
+  display: flex;
+  justify-content: start;
+  margin-left: 2dvh;
+  margin-top: 1dvh;
+}
+main .treinamento .grid-container .card .card-body .card-people img {
+  width: 5dvh;
+  height: 5dvh;
+  margin-right: 1dvh;
+}
+main .treinamento .grid-container .card .card-body .benefits {
+  color: hsl(217, 91%, 20%);
+}
+main .treinamento .grid-container .card .card-body div {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2dvh;
+  margin-left: 1dvh;
+}
+main .treinamento .grid-container .card .card-body div .borda {
+  width: 80%;
+  height: 5dvh;
+  border: 1px solid hsl(25, 95%, 53%);
+  margin-right: 1dvh;
+  border-radius: 2dvh;
+}
+main .treinamento .grid-container .card .card-body div .borda p {
+  color: hsl(220, 13%, 18%);
+}
+main .treinamento .grid-container .card:hover {
+  transform: scale(1.1);
+}
+main .testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1dvh;
+}
+main .testimonials h2 {
+  color: hsl(217, 91%, 20%);
+  font-weight: 600;
+}
+main .testimonials span {
+  color: hsl(142, 71%, 45%);
+  font-weight: 600;
+}
+main .testimonials p {
+  color: hsl(220, 9%, 46%);
+  line-height: 2rem;
+}
+main .testimonials .testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main .testimonials .testimonials-grid .testimonials-card {
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+  border-radius: 2dvh;
+  background-color: hsl(0, 0%, 100%);
+  margin-top: 1dvh;
+}
+main .testimonials .testimonials-grid .testimonials-card .testimonials-img {
+  display: flex;
+  justify-content: end;
+}
+main .testimonials .testimonials-grid .testimonials-card .testimonials-img img {
+  width: 8dvh;
+  height: 8dvh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 2dvh;
+}
+main .testimonials .testimonials-grid .testimonials-card .testimonials-body {
+  display: flex;
+  flex-direction: column;
+}
+main .testimonials .testimonials-grid .testimonials-card .testimonials-body .quilos {
+  width: 50%;
+  height: 3dvh;
+  border: 1px solid hsl(142, 71%, 45%);
+  background: hsl(142, 71%, 65%);
+  margin-left: 2dvh;
+  border-radius: 2dvh;
+  margin-top: 1dvh;
+}
+main .testimonials .testimonials-grid .testimonials-card .testimonials-body .quilos .testimonial-weight {
+  color: hsl(0, 0%, 100%);
+}
+main .testimonials .testimonials-grid .testimonials-card .testimonials-body .alunos {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2dvh;
+}
+main .testimonials .testimonials-grid .testimonials-card .testimonials-body .alunos .aluno-nome {
+  width: 7dvh;
+  height: 7dvh;
+  border-radius: 50%;
+  background: linear-gradient(135deg, hsl(142, 71%, 45%), hsl(25, 95%, 53%));
+  margin-right: 2dvh;
+}
+main .testimonials .testimonials-grid .testimonials-card .testimonials-body .alunos .aluno-nome .inicial {
+  color: hsl(0, 0%, 100%);
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+main .info {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

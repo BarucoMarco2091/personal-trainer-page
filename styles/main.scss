@@ -1,0 +1,308 @@
+@import '../styles/variables.scss';
+@import '../styles/responsivity.scss';
+
+main {
+    background-color: $background;
+    padding: 1dvh 1dvh;
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .about-text {
+            margin-left: 2dvh;
+            margin-bottom: 2dvh;
+
+            h2 {
+                color: $accent;
+            }
+
+            span {
+                color: $ring;
+            }
+
+            p {
+                color: $muted-foreground;
+                line-height: 2rem;
+            }
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: 3dvh;
+
+            .card {
+                display: flex;
+                box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+                height: 10dvh;
+                border-radius: 1dvh 1dvh 1dvh 1dvh;
+                margin-top: 1.5dvh;
+
+                .card-img {
+                    height: 70%;
+                    margin-top: 1dvh;
+                    margin-left: 1dvh;
+
+                    img {
+                        width: 5dvh;
+                        height: 5dvh;
+                        object-fit: contain;
+                        color: $popover;
+                    }
+                }
+
+                .card-info {
+                    margin-left: 2dvh;
+
+                    .card-clientes,
+                    .card-award {
+
+                        p {
+                            color: $card-foreground;
+                            font-weight: 600;
+                        }
+
+                        span {
+                            color: $muted-foreground;
+                            font-family: 'Poppins', serif;
+                        }
+                    }
+                }
+            }
+        }
+
+        .objectives {
+            background: $gradient-hero;
+            margin-top: 7dvh;
+            border-radius: 2dvh;
+
+            p {
+                color: $popover;
+                padding: 2dvh 2dvh;
+            }
+
+            span {
+                font-family: 'Poppins', serif;
+                color: $muted;
+                margin-left: 2dvh;
+            }
+        }
+    }
+
+    .treinamento {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        h2 {
+            color: $accent;
+            font-weight: 600;
+        }
+
+        span {
+            color: $primary;
+            font-weight: 600;
+        }
+
+        p {
+            color: $muted-foreground;
+            line-height: 2rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .card {
+                box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+                border-radius: 2dvh;
+                overflow: hidden;
+                background-color: $card;
+                transition: transform .9s;
+                margin-top: 1dvh;
+
+                .card-image {
+
+                    img {
+                        filter: brightness(50%);
+                        margin-bottom: 3dvh;
+                        transition: transform .9s;
+                    }
+
+                    img:hover {
+                        transform: scale(1.1);
+                    }
+                }
+
+                .card-body {
+                    margin-top: 1dvh;
+
+                    .card-title {
+                        color: $accent;
+                        font-family: 'Poppins', serif;
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                        transition: color .9s;
+                    }
+
+                    .card-title:hover {
+                        color: $primary;
+                    }
+
+                    .card-description {
+                        line-height: normal;
+                    }
+
+                    .card-clock {
+                        display: flex;
+                        justify-content: start;
+                        margin-left: 2dvh;
+                        margin-top: 1dvh;
+
+                        img {
+                            width: 5dvh;
+                            height: 5dvh;
+                            margin-right: 1dvh;
+                        }
+                    }
+
+                    .card-people {
+                        display: flex;
+                        justify-content: start;
+                        margin-left: 2dvh;
+                        margin-top: 1dvh;
+
+                        img {
+                            width: 5dvh;
+                            height: 5dvh;
+                            margin-right: 1dvh;
+                        }
+                    }
+
+                    .benefits {
+                        color: $accent;
+                    }
+
+                    div {
+                        display: flex;
+                        justify-content: space-around;
+                        margin-bottom: 2dvh;
+                        margin-left: 1dvh;
+
+                        .borda {
+                            width: 80%;
+                            height: 5dvh;
+                            border: 1px solid $secondary;
+                            margin-right: 1dvh;
+                            border-radius: 2dvh;
+
+                            p {
+                                color: $card-foreground;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1dvh;
+
+        h2 {
+            color: $accent;
+            font-weight: 600;
+        }
+
+        span {
+            color: $primary;
+            font-weight: 600;
+        }
+
+        p {
+            color: $muted-foreground;
+            line-height: 2rem;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .testimonials-card {
+                box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+                border-radius: 2dvh;
+                background-color: $card;
+                margin-top: 1dvh;
+
+                .testimonials-img {
+                    display: flex;
+                    justify-content: end;
+
+                    img {
+                        width: 8dvh;
+                        height: 8dvh;
+                        object-fit: contain;
+                        margin-bottom: 2dvh;
+                    }
+                }
+
+                .testimonials-body {
+                    display: flex;
+                    flex-direction: column;
+
+                    .quilos {
+                        width: 50%;
+                        height: 3dvh;
+                        border: 1px solid $primary;
+                        background: $primary-glow;
+                        margin-left: 2dvh;
+                        border-radius: 2dvh;
+                        margin-top: 1dvh;
+
+                        .testimonial-weight {
+                            color: $popover;
+                        }
+                    }
+
+                    .alunos {
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 2dvh;
+
+                        .aluno-nome {
+                            width: 7dvh;
+                            height: 7dvh;
+                            border-radius: 50%;
+                            background: $gradient-hero;
+                            margin-right: 2dvh;
+
+                            .inicial {
+                                color: $popover;
+                                margin: 0 auto;
+                                align-items: center;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .info {
+        display: none;
+        
+    }
+}

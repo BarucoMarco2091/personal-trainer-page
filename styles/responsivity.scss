@@ -116,11 +116,15 @@
         padding-top: 5dvh;
 
         .testimonials-grid {
-             display: grid;
+            display: grid;
             grid-template-columns: repeat(3, 1fr) !important;
             gap: 2dvh !important;
             margin-top: 5dvh;
             margin-bottom: 5dvh;
+
+            .quilos {
+                width: 50% !important;
+            }
         }
     }
 }
@@ -145,7 +149,7 @@
         .gray {
             color: $muted-foreground;
             font-size: 1.3rem;
-            font-family: 'Poppins', serif;
+            font-family: 'Poppins', serif !important;
             margin-top: 2dvh;
         }
     }

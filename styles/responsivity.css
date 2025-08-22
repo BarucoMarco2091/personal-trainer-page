@@ -103,6 +103,9 @@
     margin-top: 5dvh;
     margin-bottom: 5dvh;
   }
+  .testimonials .testimonials-grid .quilos {
+    width: 50% !important;
+  }
 }
 @media (width >= 1024px) {
   .info {
@@ -123,7 +126,7 @@
   .info .gray {
     color: hsl(220, 9%, 46%);
     font-size: 1.3rem;
-    font-family: "Poppins", serif;
+    font-family: "Poppins", serif !important;
     margin-top: 2dvh;
   }
 }
